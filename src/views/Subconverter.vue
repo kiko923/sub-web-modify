@@ -561,7 +561,7 @@ export default {
               },
               {
                 label: "ACL_全分组版",
-                value: "https://ghproxy.cc/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
+                value: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"
               },
               {
                 label: "ACL_全分组谷歌版",
@@ -894,7 +894,7 @@ export default {
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://sub-api.znnu.com" : this.getUrlParam(),
         shortType: "https://s.znnu.com/short",
-        remoteConfig: "https://ghproxy.cc/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
+        remoteConfig: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
