@@ -476,7 +476,8 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "永至后端(全国CDN)": "https://sub-api.znnu.com",
+          "自用后端(CDN)": "https://sub-api.znnu.com",
+          "备用后端(EdgeOne)": "https://sub-api-eo.znnu.com",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
           "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
@@ -487,6 +488,7 @@ export default {
         },
         backendOptions: [
           {value: "https://sub-api.znnu.com"},
+          {value: "https://sub-api-eo.znnu.com"},
           {value: "https://url.v1.mk"},
           {value: "https://sub.d1.mk"},
           {value: "https://api.tsutsu.one"},
