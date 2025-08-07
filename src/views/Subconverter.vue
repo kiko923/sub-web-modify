@@ -913,7 +913,7 @@ export default {
         tfo: false,
         sort: false,
         expand: true,
-        scv: false,
+        scv: true,
         fdn: false,
         appendType: false,
         insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
