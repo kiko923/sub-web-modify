@@ -435,37 +435,37 @@ const tgBotLink = process.env.VUE_APP_BOT_LINK
 const yglink = process.env.VUE_APP_YOUTUBE_LINK
 const bzlink = process.env.VUE_APP_BILIBILI_LINK
 const downld = 'http://' + window.location.host + '/download.html'
-export 默认 {
+export default {
   data() {
     return {
-      backendVersion: ""，
-      centerDialogVisible: false，
-      activeName: 'first'，
+      backendVersion: "",
+      centerDialogVisible: false,
+      activeName: 'first',
       // 是否为 PC 端
-      isPC: true，
-      btnBoolean: false，
+      isPC: true,
+      btnBoolean: false,
       options: {
         clientTypes: {
-          Clash: "clash"，
+          Clash: "clash",
           "Surge4/5": "surge&ver=4",
           "Sing-Box": "singbox",
-          V2Ray: "v2ray"，
-          Trojan: "trojan"，
-          ShadowsocksR: "ssr"，
-          "混合订阅（mixed）": "mixed"，
-          Surfboard: "surfboard"，
-          Quantumult: "quan"，
-          "Quantumult X": "quanx"，
-          Loon: "loon"，
-          Mellow: "mellow"，
-          Surge3: "surge&ver=3"，
-          Surge2: "surge&ver=2"，
-          ClashR: "clashr"，
-          "Shadowsocks(SIP002)": "ss"，
-          "Shadowsocks Android(SIP008)": "sssub"，
-          ShadowsocksD: "ssd"，
+          V2Ray: "v2ray",
+          Trojan: "trojan",
+          ShadowsocksR: "ssr",
+          "混合订阅（mixed）": "mixed",
+          Surfboard: "surfboard",
+          Quantumult: "quan",
+          "Quantumult X": "quanx",
+          Loon: "loon",
+          Mellow: "mellow",
+          Surge3: "surge&ver=3",
+          Surge2: "surge&ver=2",
+          ClashR: "clashr",
+          "Shadowsocks(SIP002)": "ss",
+          "Shadowsocks Android(SIP008)": "sssub",
+          ShadowsocksD: "ssd",
           "自动判断客户端": "auto",
-        }，
+        },
         shortTypes: {
           "u.znnu.com":"https://u.znnu.com/short",
           "3p.pw": "https://3p.pw/short",
@@ -473,26 +473,26 @@ export 默认 {
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
           "suo.yt": "https://suo.yt/short",
-          "sub.cm": "https://sub.cm/short"，
-        }，
+          "sub.cm": "https://sub.cm/short",
+        },
         customBackend: {
           "自用后端(CDN)": "https://sub-api.znnu.com",
           "备用后端(EdgeOne)": "https://sub-api-eo.znnu.com",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
           "肥羊备用后端【vless reality+hy1+hy2】": "https://sub.d1.mk",
-          "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one"，
+          "つつ-多地防失联【负载均衡+国内优化】": "https://api.tsutsu.one",
           nameless13提供: "https://www.nameless13.com",
-          subconverter作者提供: "https://sub.xeton.dev"，
+          subconverter作者提供: "https://sub.xeton.dev",
           "sub-web作者提供": "https://api.wcc.best",
-          "sub作者&lhie1提供": "https://api.dler.io"，
-        }，
+          "sub作者&lhie1提供": "https://api.dler.io",
+        },
         backendOptions: [
           {value: "https://sub-api.znnu.com"},
-          {value: "https://sub-api-eo.znnu.com"}，
+          {value: "https://sub-api-eo.znnu.com"},
           {value: "https://url.v1.mk"},
           {value: "https://sub.d1.mk"},
-          {value: "https://api.tsutsu.one"}，
-          {value: "https://www.nameless13.com"}，
+          {value: "https://api.tsutsu.one"},
+          {value: "https://www.nameless13.com"},
           {value: "https://sub.xeton.dev"},
           {value: "https://api.wcc.best"},
           {value: "https://api.dler.io"},
@@ -842,86 +842,86 @@ export 默认 {
               {
                 label: "Ytoo",
                 value: "https://subweb.s3.fr-par.scw.cloud/RemoteConfig/customized/ytoo.ini"
-              }，
+              },
               {
-                label: "w8ves"，
+                label: "w8ves",
                 value: "https://raw.nameless13.com/api/public/dl/M-We_Fn7/w8ves.ini"
-              }，
+              },
               {
-                label: "NyanCAT"，
+                label: "NyanCAT",
                 value: "https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/remote-config/customized/nyancat.ini"
-              }，
+              },
               {
-                label: "Nexitally"，
+                label: "Nexitally",
                 value: "https://subweb.s3.fr-par.scw.cloud/RemoteConfig/customized/nexitally.ini"
-              }，
+              },
               {
-                label: "SoCloud"，
+                label: "SoCloud",
                 value: "https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/remote-config/customized/socloud.ini"
-              }，
+              },
               {
-                label: "ARK"，
+                label: "ARK",
                 value: "https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/remote-config/customized/ark.ini"
-              }，
+              },
               {
                 label: "N3RO",
                 value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/n3ro_optimized.ini"
-              }，
+              },
               {
                 label: "Scholar",
                 value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/scholar_optimized.ini"
-              }，
+              },
               {
-                label: "Flowercloud"，
+                label: "Flowercloud",
                 value: "https://subweb.s3.fr-par.scw.cloud/RemoteConfig/customized/flower.ini"
               }
             ]
-          }，
+          },
           {
-            label: "特殊"，
+            label: "特殊",
             options: [
               {
                 label: "NeteaseUnblock",
                 value: "https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/remote-config/special/netease.ini"
-              }，
+              },
               {
-                label: "Basic"，
+                label: "Basic",
                 value: "https://raw.githubusercontent.com/SleepyHeeead/subconverter-config/master/remote-config/special/basic.ini"
               }
             ]
           }
         ]
-      }，
+      },
       form: {
-        sourceSubUrl: ""，
-        clientType: ""，
+        sourceSubUrl: "",
+        clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://sub-api.znnu.com" : this.getUrlParam(),
-        shortType: "https://u.znnu.com/short"，
-        remoteConfig: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"，
-        excludeRemarks: ""，
-        includeRemarks: ""，
-        filename: ""，
-        rename: ""，
-        devid: ""，
+        shortType: "https://u.znnu.com/short",
+        remoteConfig: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
+        excludeRemarks: "",
+        includeRemarks: "",
+        filename: "",
+        rename: "",
+        devid: "",
         interval: "",
-        emoji: true，
-        nodeList: false，
-        extraset: false，
-        tls13: false，
-        udp: false，
-        xudp: false，
-        tfo: false，
-        sort: false，
-        expand: true，
-        scv: true，
-        fdn: false，
-        appendType: false，
-        insert: false， // 是否插入默认订阅的节点，对应配置项 insert_url
-        new_name: true， // 是否使用 Clash 新字段
+        emoji: true,
+        nodeList: false,
+        extraset: false,
+        tls13: false,
+        udp: false,
+        xudp: false,
+        tfo: false,
+        sort: false,
+        expand: true,
+        scv: true,
+        fdn: false,
+        appendType: false,
+        insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
+        new_name: true, // 是否使用 Clash 新字段
         tpl: {
           surge: {
             doh: false // dns 查询是否使用 DoH
-          }，
+          },
           clash: {
             doh: false
           },
