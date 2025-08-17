@@ -421,18 +421,18 @@
   </div>
 </template>
 <script>
-const project = process.env。VUE_APP_PROJECT
+const project = process.env.VUE_APP_PROJECT
 const configScriptBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/api.php'
-const remoteConfigSample = process.env。VUE_APP_SUBCONVERTER_REMOTE_CONFIG
-const scriptConfigSample = process.env。VUE_APP_SCRIPT_CONFIG
+const remoteConfigSample = process.env.VUE_APP_SUBCONVERTER_REMOTE_CONFIG
+const scriptConfigSample = process.env.VUE_APP_SCRIPT_CONFIG
 const filterConfigSample = process.env.VUE_APP_FILTER_CONFIG
-const defaultBackend = process.env。VUE_APP_SUBCONVERTER_DEFAULT_BACKEND
+const defaultBackend = process.env.VUE_APP_SUBCONVERTER_DEFAULT_BACKEND
 const shortUrlBackend = process.env.VUE_APP_MYURLS_DEFAULT_BACKEND + '/short'
 const configUploadBackend = process.env.VUE_APP_CONFIG_UPLOAD_BACKEND + '/sub.php'
-const basicVideo = process.env。VUE_APP_BASIC_VIDEO
-const advancedVideo = process.env。VUE_APP_ADVANCED_VIDEO
+const basicVideo = process.env.VUE_APP_BASIC_VIDEO
+const advancedVideo = process.env.VUE_APP_ADVANCED_VIDEO
 const tgBotLink = process.env.VUE_APP_BOT_LINK
-const yglink = process.env。VUE_APP_YOUTUBE_LINK
+const yglink = process.env.VUE_APP_YOUTUBE_LINK
 const bzlink = process.env.VUE_APP_BILIBILI_LINK
 const downld = 'http://' + window.location.host + '/download.html'
 export 默认 {
@@ -895,7 +895,7 @@ export 默认 {
       form: {
         sourceSubUrl: ""，
         clientType: ""，
-        customBackend: this。getUrlParam() == "" ? "https://sub-api.znnu.com" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://sub-api.znnu.com" : this.getUrlParam(),
         shortType: "https://u.znnu.com/short"，
         remoteConfig: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini"，
         excludeRemarks: ""，
