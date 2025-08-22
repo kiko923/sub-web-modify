@@ -467,12 +467,12 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
+          "suo.yt": "https://suo.yt/short",
           "u.znnu.com":"https://u.znnu.com/short",
           "3p.pw": "https://3p.pw/short",
           "v1.mk": "https://v1.mk/short",
           "d1.mk": "https://d1.mk/short",
           "dlj.tf": "https://dlj.tf/short",
-          "suo.yt": "https://suo.yt/short",
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
@@ -896,7 +896,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://sub-api.znnu.com" : this.getUrlParam(),
-        shortType: "https://u.znnu.com/short",
+        shortType: "https://suo.yt/short",
         remoteConfig: "https://ghproxy.cfd/https://raw.githubusercontent.com/kiko923/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full.ini",
         excludeRemarks: "",
         includeRemarks: "",
